@@ -19,6 +19,7 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 1.2em;
+  color: #fff;
 }
 
 .nav-links {
@@ -32,7 +33,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 .dropdown {
@@ -59,6 +60,8 @@ nav {
   text-decoration: none;
   display: block;
 }
+
+
 
 .shop-links {
   display: flex;
@@ -170,7 +173,7 @@ header {
 
 .search-bar button {
   padding: 10px 15px;
-  background-color: #007bff; /* Example color */
+  background-color: #ff00aa; /* Example color */
   color: white;
   border: none;
   border-radius: 0 5px 5px 0; /* Round right corners */
@@ -205,6 +208,10 @@ header {
   
 }
 
+.grid-item:hover {
+  
+}
+
 .grid-item {
   border: 1px solid #ccc; /* Optional border for each item */
   padding: 15px;
@@ -217,26 +224,37 @@ header {
   margin-bottom: 10px;
 }
 
+.grid-item img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
 .grid-item p {
   margin-bottom: 10px;
 }
 
 .add-to-cart {
-  background-color: green;
+  background-color: rgb(179, 35, 192);
   color: white;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
- 
-  
+}
+
+.add-to-cart:hover {
+  background-color: #6e094c;
 }
 
 .call-agent {
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   color: white;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
+}
+
+.call-agent:hover {
+  background-color: #333;
 }
 
 /* Media query for responsiveness */
@@ -249,6 +267,57 @@ header {
 @media (max-width: 480px) { /* Adjust breakpoint as needed */
   .grid-container {
       grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+.team-section {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center; /* Center the heading */
+}
+
+.team-container {
+  display: flex;
+  justify-content: center; /* Center the team members horizontally */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Space between team members */
+  max-width: 1200px; /* Optional max width for the container */
+  margin: 20px auto; /* Center the container */
+}
+
+.team-member {
+  text-align: center; /* Center content within each member */
+  flex: 1 1 250px; /* Adjust minimum width as needed */
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Make images circular */
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+  border: 3px solid white; /* Add a white border */
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-style: italic;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 900px) {
+  .team-member {
+      flex: 1 1 300px; /* Example: Adjust flex-basis for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .team-member {
+      flex: 1 1 100%; /* One team member per row on very small screens */
   }
 }
 
