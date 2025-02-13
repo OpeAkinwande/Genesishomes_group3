@@ -1,0 +1,322 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fff; /* White background */
+}
+
+nav {
+  padding: 10px;
+  position: absolute;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  max-width: 960px; /* Limit width for larger screens */
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.shop-links {
+  display: flex;
+  justify-content: center; /* Center the shop links */
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.shop-links a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #eee; /* Light gray background for shop links */
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+  max-width: 960px; /* Limit width for larger screens */
+  margin: 20px auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card button {
+  background-color: purple; /* Purple button */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header {
+  width: 100%; /* Make header full width */
+  overflow: hidden; /* Hide any image overflow */
+  position: ; /* For positioning header content */
+
+}
+
+
+.header-image {
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  display: block; /* Prevent small space below image */
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  color: white; /* Or any color you prefer */
+  text-align: center; /* Center text */
+  width: 80%; /* Adjust width as needed */
+}
+
+.header-content h1 {
+  font-size: 3em; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2em; /* Adjust font size */
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex; /* Arrange input and button horizontally */
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the search bar */
+}
+
+.search-bar input {
+  flex-grow: 1; /* Allow input to expand */
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px; /* Round left corners */
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Example color */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Round right corners */
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+  .header-content h1 {
+      font-size: 2em;
+  }
+
+  .header-content p {
+      font-size: 1em;
+  }
+
+  .search-bar {
+      width: 80%;
+  }
+}
+
+.othershops{
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px;
+  
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Optional border for each item */
+  padding: 15px;
+  text-align: center; /* Center content within grid item */
+}
+
+.grid-item img {
+  max-width: 100%; /* Make sure images don't overflow */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+ 
+  
+}
+
+.call-agent {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* Adjust breakpoint as needed */
+  .grid-container {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+footer {
+  background-color: rgb(15, 11, 11);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  max-width: 960px; /* Optional: Set a maximum width for the footer */
+  margin: 0 auto; /* Center the footer */
+}
+
+.footer-column {
+  flex: 1; /* Each column takes equal space */
+  margin-bottom: 20px; /* Space between columns (especially on smaller screens) */
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+.social-icons a {
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  font-size: 20px; /* Adjust icon size as needed */
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+  .footer-column {
+      flex: 1 1 50%; /* Two columns per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column {
+      flex: 1 1 100%; /* One column per row on small screens */
+  }
+}
