@@ -13,7 +13,7 @@ nav {
   display: flex;
   align-items: center;
   max-width: 960px; /* Limit width for larger screens */
-  margin: 0 auto;
+  
 }
 
 .logo {
@@ -25,15 +25,31 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
+  margin-left: 15rem;
+  text-align: left;
 }
 
 .nav-links li {
   margin-left: 20px;
+  
 }
 
 .nav-links a {
   text-decoration: none;
   color: #ffffff;
+  
+}
+
+.cart-count{
+  background-color: #44022e;
+  border-radius: 50%;
+  border: ;
+  border-color: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 5px;
+  height: 20px;
+  padding: 0 5px;
 }
 
 .dropdown {
