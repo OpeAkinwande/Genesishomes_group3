@@ -6,13 +6,15 @@ body {
 
 nav {
   padding: 10px;
-  position: absolute;
+  position: fixed;
+  background-color: #cf068c;
+  width: 100%;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
-  max-width: 960px; /* Limit width for larger screens */
+  
   
 }
 
@@ -25,8 +27,8 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  margin-left: 15rem;
-  text-align: left;
+  margin-left: 35rem;
+  
 }
 
 .nav-links li {
@@ -48,8 +50,15 @@ nav {
   color: #ffffff;
   text-align: center;
   margin-left: 5px;
-  height: 20px;
-  padding: 0 5px;
+  height: 30px;
+  padding: 0 7px;
+}
+
+.menubar{
+  cursor: pointer;
+  padding-left: 12px;
+  color: #ffffff;
+  display: none;
 }
 
 .dropdown {
@@ -134,9 +143,8 @@ nav {
 }
 
 header {
-  width: 100%; /* Make header full width */
-  overflow: hidden; /* Hide any image overflow */
-  position: ; /* For positioning header content */
+  width: 100%; 
+
 
 }
 
