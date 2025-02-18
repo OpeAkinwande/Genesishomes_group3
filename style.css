@@ -9,6 +9,9 @@ nav {
   position: fixed;
   background-color: #cf068c;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .nav-container {
@@ -42,24 +45,59 @@ nav {
   
 }
 
+.menu-icon {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 920px) { /* Tablet and smaller */
+  .nav-links {
+      display: none; /* Hide links on smaller screens */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 60px; /* Adjust top position as needed */
+     margin: auto;
+      width: 10%;
+      background-color: #c01272;
+      color: #ffffff;
+      text-align: center; /* Center link text */
+  }
+
+  .nav-links.active { /* Show links when menu icon is clicked */
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 10px 0; /* Adjust margin for stacked links */
+  }
+
+  .menu-icon {
+      display: block; /* Show menu icon */
+  }
+}
+
 .cart-count{
   background-color: #44022e;
-  border-radius: 50%;
-  border: ;
+  border-radius: 45%;
+  align-content: center;
   border-color: #ffffff;
   color: #ffffff;
   text-align: center;
   margin-left: 5px;
-  height: 30px;
-  padding: 0 7px;
+  height: 20px;
+  padding: 0 5px;
+  position: sticky;
+  top: 4px;
+  right: 60px;
 }
 
-.menubar{
-  cursor: pointer;
-  padding-left: 12px;
-  color: #ffffff;
-  display: none;
-}
 
 .dropdown {
   position: relative;
@@ -144,14 +182,13 @@ nav {
 
 header {
   width: 100%; 
-
-
+  position: static;
 }
 
 
 .header-image {
   width: 100%;
-  height: 400px; /* Adjust as needed */
+  height: 400px; 
   overflow: hidden;
 }
 
@@ -167,9 +204,9 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the content */
-  color: white; /* Or any color you prefer */
+  color: white; 
   text-align: center; /* Center text */
-  width: 80%; /* Adjust width as needed */
+  width: 80%; 
 }
 
 .header-content h1 {
@@ -230,6 +267,36 @@ header {
   gap: 20px; /* Spacing between grid items */
   padding: 20px;
   
+}
+
+.price-rectangle {
+  position: absolute;
+  top: 570px;
+  right: 890px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.price-rectangle2 {
+  position: absolute;
+  top: 570px;
+  right: 647px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.price-rectangle3 {
+  position: absolute;
+  top: 570px;
+  right: 647px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .grid-item:hover {
@@ -367,6 +434,7 @@ footer {
 
 .footer-column h3 {
   margin-bottom: 10px;
+  color: #cf068c;
 }
 
 .footer-column ul {
