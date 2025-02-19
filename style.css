@@ -25,6 +25,7 @@ nav {
   font-weight: bold;
   font-size: 1.2em;
   color: #fff;
+  display: flex;
 }
 
 .nav-links {
@@ -48,6 +49,7 @@ nav {
 .menu-icon {
   display: none; /* Hidden by default on larger screens */
   cursor: pointer;
+  padding-right: 1rem;
 }
 
 .bar {
