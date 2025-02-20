@@ -49,7 +49,8 @@ nav {
 .menu-icon {
   display: none; /* Hidden by default on larger screens */
   cursor: pointer;
-  padding-right: 1rem;
+  padding-right: 2rem;
+  
 }
 
 .bar {
@@ -64,9 +65,9 @@ nav {
       display: none; /* Hide links on smaller screens */
       flex-direction: column; /* Stack links vertically */
       position: absolute;
-      top: 60px; /* Adjust top position as needed */
+      top: 44px; /* Adjust top position as needed */
      margin: auto;
-      width: 10%;
+      width: 30%;
       background-color: #c01272;
       color: #ffffff;
       text-align: center; /* Center link text */
@@ -110,23 +111,30 @@ nav {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 100px;
+  left: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  text-align: left;
+  text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: gray;
+  
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-
+.dropdown-content a:hover{
+  background-color: black;
+}
 
 .shop-links {
   display: flex;
@@ -203,7 +211,7 @@ header {
 
 .header-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the content */
   color: white; 
