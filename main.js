@@ -8,12 +8,15 @@ callAgentButtons.forEach(button => {
 
 let cartCount = 0;
 const cartCountSpan = document.querySelector('.cart-count');
+let button = document.querySelector('.add-to-cart')
 
 document.querySelectorAll('.add-to-cart').forEach(button =>{
 
     button.addEventListener('click', () => {
         cartCount++;
         cartCountSpan.textContent = cartCount;
+        button.innerHTML = 'Bookmarked'
+        button.style.backgroundColor = 'gray';
     });
 
 });
