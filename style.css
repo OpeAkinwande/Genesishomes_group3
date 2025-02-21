@@ -17,8 +17,9 @@ nav {
 .nav-container {
   display: flex;
   align-items: center;
-  
-  
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .logo {
@@ -31,7 +32,6 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  margin-left: 35rem;
   
 }
 
@@ -93,27 +93,27 @@ nav {
   border-color: #ffffff;
   color: #ffffff;
   text-align: center;
-  margin-left: 5px;
+  margin-left: 3px;
   height: 20px;
-  padding: 0 5px;
+  padding: 0 6px;
   position: sticky;
   top: 4px;
-  right: 20px;
+  right: 10px;
 }
 
 
 .dropdown {
-  position: relative;
+  position: sticky;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #c50c87;
   min-width: 100px;
-  left: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: 10px;
+  
   z-index: 1;
   text-align: left;
   text-decoration: none;
@@ -127,9 +127,11 @@ nav {
 
 .dropdown-content a {
   color: rgb(255, 255, 255);
+  background-color: #d40e99;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  
 }
 
 .dropdown-content a:hover{
